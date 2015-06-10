@@ -1,5 +1,5 @@
 #! /bin/bash
-# Build para compilar NucleRom
+# Build para compilar NuclearSlim
 
 
 # No scrollback buffer
@@ -33,8 +33,8 @@ tput setaf 1
 clear
 echo -e ""
 echo -e ""
-echo -e "Nuclea"
-echo -e "      Rom  "
+echo -e "Nuclear"
+echo -e "      Slim  "
 echo -e ""
 echo -e ""
 sleep 5
@@ -70,7 +70,7 @@ then
 else
 	echo -e ""
 	echo -e ""
-	echo -e "Continua con la compilación NucleaRom, sin borrar archivos antiguos."
+	echo -e "Continua con la compilación NuclearSlim, sin borrar archivos antiguos."
 	echo -e ""
 	echo -e ""
 
@@ -88,15 +88,15 @@ echo -e ""
 $normal
 $green
 sleep 5
-breakfast bacon
+lunch slim_bacon-userdebug
 sleep 5
 clear
 # Empezar Compilación
 echo -e ""
 echo -e ""
-echo -e "${bldcya}  Iniciando la compilación de NucleaRom...."
+echo -e "${bldcya}  Iniciando la compilación de NucleaSlim...."
 echo -e ""
-brunch bacon
+mka bacon
 echo -e ""
 # Get elapsed time
 $blue
