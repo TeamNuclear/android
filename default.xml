@@ -17,6 +17,11 @@
   <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  
+  <project path="android" name="TeamNuclear/android" remote="github" revision="slp5.1" >
+  <copyfile src="build.sh" dest="build-nr.sh" />
+  </project>
+  
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
   <project path="bionic" name="SlimRoms/android_bionic" remote="github" revision="lp5.1" />
@@ -539,7 +544,6 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="lp5.1" />
 
   <!-- New Additions for slim -->
   <project path="vendor/slim" name="TeamNuclear/vendor_slim" remote="github" revision="lp5.1" />
