@@ -579,4 +579,7 @@
 
   <!-- ChameleonOS -->
   <project path="packages/apps/ScreenRecorder" name="SlimSaber/packages_apps_ScreenRecorder" remote="github" revision="lp5.0" />
+
+<!-- SlimWallpaperPicker -->
+  <project name="SlimSaber/packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lp5.1" />
 </manifest>
