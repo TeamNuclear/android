@@ -10,7 +10,13 @@ echo -e '\0033\0143'
 # Obteniendo la hora incial del arranque
 res1=$(date +%s.%N)
 
+# Kernel Details
+BASE_AK_VER="RADIOACTIVE"
+VER="RADIOACTIVE_V2.20"
+RADIOACTIVE_VER="$BASE_RADIOACTIVE_VER$VER"
 
+# Vars
+export LOCALVERSION=~`echo $RADIOACTIVE_VER`
 
 # Colores para el terminal
 red='tput setaf 1'              # red
@@ -88,7 +94,7 @@ echo -e ""
 $normal
 $green
 sleep 5
-lunch slim_bacon-userdebug
+breakfast bacon
 sleep 5
 clear
 # Empezar Compilación
@@ -96,7 +102,7 @@ echo -e ""
 echo -e ""
 echo -e "${bldcya}  Iniciando la compilación de NucleaSlim...."
 echo -e ""
-mka bacon
+brunch bacon
 echo -e ""
 # Get elapsed time
 $blue
