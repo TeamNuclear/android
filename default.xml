@@ -15,11 +15,11 @@
            sync-j="4" />
 
   <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
-    <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" />
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="TeamNuclear/android" remote="github" revision="slp5.1" >
   <copyfile src="build.sh" dest="build-nr.sh" />
+  <copyfile src="generate_changelog.sh" dest="generate_changelog.sh" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
