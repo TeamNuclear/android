@@ -14,8 +14,8 @@
            remote="aosp"
            sync-j="4" />
              <!-- CMRemix Github remote -->
-  <remote  name="TN"
-           fetch="https://github.com/TeamNuclear/" />
+  <remote  name="cmR"
+           fetch="https://github.com/CMRemix/" />
 
   <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -590,11 +590,11 @@
   <project name="SlimSaber/packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lp5.1" />
 
     <!-- Clang Qcom Dependencies -->
-  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" name="llvm-Snapdragon_LLVM_for_Android_3.5/" remote="TN" revision="clang_qcom_3.5" />
-  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="TN" revision="clang_qcom_3.6" />
-  <project path="vendor/clanglibs" name="clanglibs" remote="TN" revision="clang_qcom_3.6" />
-  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
-  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
-  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" name="llvm-Snapdragon_LLVM_for_Android_3.5/" remote="cmR" revision="clang_qcom_3.5" />
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="cmR" revision="clang_qcom_3.6" />
+  <project path="vendor/clanglibs" name="clanglibs" remote="cmR" revision="clang_qcom_3.6" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="cmR" revision="clang_qcom_3.6" />
+  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="cmR" revision="clang_qcom_3.6" />
+  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="cmR" revision="clang_qcom_3.6" />
 
 </manifest>
