@@ -13,11 +13,14 @@
   <default revision="refs/tags/android-5.1.1_r13"
            remote="aosp"
            sync-j="4" />
+             <!-- CMRemix Github remote -->
+  <remote  name="TN"
+           fetch="https://github.com/TeamNuclear/" />
 
-  <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
+  <project path="build" name="TeamNuclear/android_build" remote="github" revision="newtool" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="TeamNuclear/android" remote="github" revision="slp5.1" >
+  <project path="android" name="TeamNuclear/android" remote="github" revision="newtool" >
   <copyfile src="build.sh" dest="build-nr.sh" />
   <copyfile src="generate_changelog.sh" dest="generate_changelog.sh" />
   </project>
@@ -112,7 +115,8 @@
   <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" />
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" />
-  <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
+  <!--<project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />-->
+  <!--<project path="external/compiler-rt" name="mustermaxmueller/compiler-rt" remote="github" revision="clang_qcom_3.6"/>-->
   <project path="external/conscrypt" name="platform/external/conscrypt" groups="pdk-cw-fs" />
   <project path="external/connectivity" name="SlimRoms/android_external_connectivity" remote="github" revision="lp5.1" />
   <project path="external/deqp" name="platform/external/deqp" />
@@ -322,7 +326,8 @@
   <project path="frameworks/opt/timezonepicker" name="SlimRoms/frameworks_opt_timezonepicker" remote="github" revision="lp5.1" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs" />
   <project path="frameworks/opt/widget" name="platform/frameworks/opt/widget" groups="pdk-cw-fs" />
-  <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
+  <!--<project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />-->
+  <!--<project path="frameworks/rs" name="TeamNuclear/android_frameworks_rs" remote="github" revision="clang_qcom_3.6"/>-->
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs" />
   <project path="frameworks/volley" name="platform/frameworks/volley" groups="pdk-cw-fs" />
   <project path="frameworks/webview" name="platform/frameworks/webview" groups="pdk-cw-fs" />
@@ -515,7 +520,7 @@
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
+  <!--<project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />-->
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
@@ -583,4 +588,13 @@
 
 <!-- SlimWallpaperPicker -->
   <project name="SlimSaber/packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lp5.1" />
+
+    <!-- Clang Qcom Dependencies -->
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" name="llvm-Snapdragon_LLVM_for_Android_3.5/" remote="TN" revision="clang_qcom_3.5" />
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="TN" revision="clang_qcom_3.6" />
+  <project path="vendor/clanglibs" name="clanglibs" remote="TN" revision="clang_qcom_3.6" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
+  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
+  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
+
 </manifest>
