@@ -17,7 +17,7 @@
   <remote  name="TN"
            fetch="https://github.com/TeamNuclear/" />
 
-  <project path="build" name="TeamNuclear/android_build" remote="github" revision="slp5.1" >
+  <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="TeamNuclear/android" remote="github" revision="slp5.1" >
