@@ -506,8 +506,8 @@
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="master" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="SlimRoms/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="lp5.1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.9" remote="bitbucket" groups="pdk,linux,arm" revision="master" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" groups="pdk,linux,arm" revision="master" />
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.9" remote="bitbucket" groups="pdk,linux,arm" revision="master" /> -->
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" groups="pdk,linux,arm" revision="master" /> -->
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
@@ -552,28 +552,22 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
 
-  <!-- New Additions for slim -->
-  <project path="vendor/slim" name="TeamNuclear/vendor_slim" remote="github" revision="lp5.1" />
-
-  <!-- Slim file manager -->
+  <!-- Slim file manager 
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="lp5.1" />
 
-  <!-- SlimLauncher -->
+  <!-- SlimLauncher 
   <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="lp5.1" />
 
-  <!--Power Hal -->
-  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="lp5.1" />
-
-  <!-- Slim toolchain gcc and linaro -->
+  <!-- Slim toolchain gcc and linaro
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="lp5.1" />
 
-  <!-- DashClock widget -->
+  <!-- DashClock widget 
   <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="lp5.1" />
 
-  <!-- Google play services -->
+  <!-- Google play services 
   <project path="external/google/google_play_services" name="SlimRoms/android_external_google_google_play_services" remote="github" revision="lp5.1" />
 
-  <!-- SamsungServiceMode -->
+  <!-- SamsungServiceMode 
   <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />
 
   <!-- qrngd -->
@@ -589,12 +583,8 @@
 <!-- SlimWallpaperPicker -->
   <project name="SlimSaber/packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lp5.1" />
 
-    <!-- Clang Qcom Dependencies -->
-  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" name="llvm-Snapdragon_LLVM_for_Android_3.5/" remote="TN" revision="clang_qcom_3.5" />
-  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="TN" revision="clang_qcom_3.6" />
-  <project path="vendor/clanglibs" name="clanglibs" remote="TN" revision="clang_qcom_3.6" />
-  <project path="external/compiler-rt" name="android_external_compiler-rt" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
-  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
-  <project path="frameworks/rs" name="android_frameworks_rs" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
-
+ <!--Power Hal -->
+  <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="lp5.1" />
+ <!-- Add Local -->
+ <project path=".repo/local_manifests" name="TeamNuclear/local_manifest" remote="github" revision="master" >
 </manifest>
