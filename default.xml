@@ -555,23 +555,23 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
 
-  <!-- Slim file manager -->
+  <!-- Slim file manager
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="lp5.1" />
 
-  <!-- SlimLauncher 
+  SlimLauncher 
   <project path="packages/apps/SlimLauncher" name="SlimRoms/packages_apps_SlimLauncher" remote="github" revision="lp5.1" />
 
-  <!-- Slim toolchain gcc and linaro
+  Slim toolchain gcc and linaro
   <project path="prebuilt" name="SlimRoms/android_prebuilt" remote="github" revision="lp5.1" />
 
-  <!-- DashClock widget 
+  DashClock widget 
   <project path="packages/apps/DashClock" name="SlimRoms/packages_apps_DashClock" remote="github" revision="lp5.1" />
 
-  <!-- Google play services 
+  Google play services 
   <project path="external/google/google_play_services" name="SlimRoms/android_external_google_google_play_services" remote="github" revision="lp5.1" />
 
-  <!-- SamsungServiceMode 
-  <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />
+  SamsungServiceMode 
+  <project path="packages/apps/SamsungServiceMode" name="SlimRoms/packages_apps_SamsungServiceMode" remote="github" revision="lp5.1" />  -->
 
   <!-- qrngd -->
   <project path="external/qrngd" name="SlimRoms/android_external_qrngd" remote="github" revision="lp5.1" />
