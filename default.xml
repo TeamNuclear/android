@@ -586,5 +586,5 @@
  <!--Power Hal -->
   <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="lp5.1" />
  <!-- Add Local -->
- <project path=".repo/local_manifests" name="TeamNuclear/local_manifest" remote="github" revision="master" >
+ <project path=".repo/local_manifests" name="TeamNuclear/local_manifest" remote="github" revision="master" />
 </manifest>
