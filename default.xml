@@ -13,9 +13,12 @@
   <default revision="refs/tags/android-5.1.1_r13"
            remote="aosp"
            sync-j="4" />
-             <!-- CMRemix Github remote -->
+           
   <remote  name="TN"
            fetch="https://github.com/TeamNuclear/" />
+           
+<!-- Add Local -->
+ <project path=".repo/local_manifests" name="TeamNuclear/local_manifest" remote="github" revision="master" />           
 
   <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -585,6 +588,5 @@
 
  <!--Power Hal -->
   <project path="hardware/cm" name="SlimRoms/hardware_cm" remote="github" revision="lp5.1" />
- <!-- Add Local -->
- <project path=".repo/local_manifests" name="TeamNuclear/local_manifest" remote="github" revision="master" />
+ 
 </manifest>
