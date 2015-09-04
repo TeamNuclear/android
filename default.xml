@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-<remote  name="aosp"
+  <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
   <remote  name="github"
            fetch="git://github.com/"
            review="https://review.slimroms.eu/"/>
 
-<remote  name="bitbucket"
+  <remote  name="bitbucket"
            fetch="https://bitbucket.org/" />
 
   <default revision="refs/tags/android-5.1.1_r13"
@@ -25,7 +25,7 @@
   <copyfile src="generate_changelog.sh" dest="generate_changelog.sh" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  />
+  <!-- <project path="art" name="SlimRoms/android_art" remote="github" revision="lp5.1"  /> -->
   <project path="bionic" name="SlimRoms/android_bionic" remote="github" revision="lp5.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/recovery" name="SlimRoms/bootable_recovery" remote="github" revision="lp5.1" />
@@ -85,34 +85,34 @@
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
-  <project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" />
+  <!-- <project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" /> -->
   <project path="external/chromium_org/third_party/boringssl/src" name="platform/external/chromium_org/third_party/boringssl/src" />
   <project path="external/chromium_org/third_party/brotli/src" name="platform/external/chromium_org/third_party/brotli/src" />
   <project path="external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" name="platform/external/chromium_org/third_party/eyesfree/src/android/java/src/com/googlecode/eyesfree/braille" />
-  <project path="external/chromium_org/third_party/freetype" name="platform/external/chromium_org/third_party/freetype" />
-  <project path="external/chromium_org/third_party/icu" name="platform/external/chromium_org/third_party/icu" />
+  <!-- <project path="external/chromium_org/third_party/freetype" name="platform/external/chromium_org/third_party/freetype" /> -->
+  <!-- <project path="external/chromium_org/third_party/icu" name="platform/external/chromium_org/third_party/icu" /> -->
   <project path="external/chromium_org/third_party/leveldatabase/src" name="platform/external/chromium_org/third_party/leveldatabase/src" />
   <project path="external/chromium_org/third_party/libaddressinput/src" name="platform/external/chromium_org/third_party/libaddressinput/src" />
   <project path="external/chromium_org/third_party/libjingle/source/talk" name="platform/external/chromium_org/third_party/libjingle/source/talk" />
-  <project path="external/chromium_org/third_party/libjpeg_turbo" name="platform/external/chromium_org/third_party/libjpeg_turbo" />
+  <!--<project path="external/chromium_org/third_party/libjpeg_turbo" name="platform/external/chromium_org/third_party/libjpeg_turbo" /> -->
   <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" />
   <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" />
-  <project path="external/chromium_org/third_party/libsrtp" name="platform/external/chromium_org/third_party/libsrtp" />
-  <project path="external/chromium_org/third_party/libvpx" name="platform/external/chromium_org/third_party/libvpx" />
-  <project path="external/chromium_org/third_party/libyuv" name="platform/external/chromium_org/third_party/libyuv" />
+  <!-- <project path="external/chromium_org/third_party/libsrtp" name="platform/external/chromium_org/third_party/libsrtp" /> -->
+  <!-- <project path="external/chromium_org/third_party/libvpx" name="platform/external/chromium_org/third_party/libvpx" /> -->
+  <!-- <project path="external/chromium_org/third_party/libyuv" name="platform/external/chromium_org/third_party/libyuv" /> -->
   <project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" />
-  <project path="external/chromium_org/third_party/openmax_dl" name="platform/external/chromium_org/third_party/openmax_dl" />
+  <!-- <project path="external/chromium_org/third_party/openmax_dl" name="platform/external/chromium_org/third_party/openmax_dl" /> -->
   <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" />
-  <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" />
+  <!-- <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" /> -->
   <project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" />
   <project path="external/chromium_org/third_party/skia" name="platform/external/chromium_org/third_party/skia" />
   <project path="external/chromium_org/third_party/smhasher/src" name="platform/external/chromium_org/third_party/smhasher/src" />
   <project path="external/chromium_org/third_party/usrsctp/usrsctplib" name="platform/external/chromium_org/third_party/usrsctp/usrsctplib" />
-  <project path="external/chromium_org/third_party/webrtc" name="platform/external/chromium_org/third_party/webrtc" />
+  <!-- <project path="external/chromium_org/third_party/webrtc" name="platform/external/chromium_org/third_party/webrtc" /> -->
   <project path="external/chromium_org/third_party/yasm/source/patched-yasm" name="platform/external/chromium_org/third_party/yasm/source/patched-yasm" />
   <project path="external/chromium_org/tools/grit" name="platform/external/chromium_org/tools/grit" />
   <project path="external/chromium_org/tools/gyp" name="platform/external/chromium_org/tools/gyp" />
-  <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" />
+  <!-- <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" /> -->
   <project path="external/clang" name="platform/external/clang" groups="pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" />
   <!--<project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />-->
@@ -267,7 +267,7 @@
   <project path="external/smali" name="platform/external/smali" groups="pdk-cw-fs" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
   <project path="external/speex" name="platform/external/speex" groups="pdk" />
-  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
+  <!-- <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" /> -->
   <project path="external/srec" name="platform/external/srec" groups="pdk-cw-fs" />
   <project path="external/srtp" name="platform/external/srtp" groups="pdk-cw-fs" />
   <project path="external/stlport" name="platform/external/stlport" groups="pdk" />
@@ -293,7 +293,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
-  <project path="frameworks/av" name="SlimRoms/frameworks_av" remote="github" revision="lp5.1" />
+  <!-- <project path="frameworks/av" name="SlimRoms/frameworks_av" remote="github" revision="lp5.1" /> -->
   <project path="frameworks/base" name="TeamNuclear/frameworks_base" remote="github" revision="lp5.1" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -580,7 +580,7 @@
   <!-- ChameleonOS -->
   <project path="packages/apps/ScreenRecorder" name="SlimSaber/packages_apps_ScreenRecorder" remote="github" revision="lp5.0" />
 
-<!-- SlimWallpaperPicker -->
+ <!-- SlimWallpaperPicker -->
   <project name="SlimSaber/packages_apps_WallpaperPicker" path="packages/apps/WallpaperPicker" remote="github" revision="lp5.1" />
 
  <!--Power Hal -->
@@ -611,5 +611,19 @@
   <!-- Tools -->
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15" remote="github" revision="master" />
   <project name="TeamNuclear/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15" remote="github" revision="master" />
- 
+  <!-- Optimizations -->
+  <project path="art" name="android_art" remote="TN" revision="lp5.1" />
+  <project path="external/chromium_org/third_party/libyuv" name="external_chromium_org_third_party_libyuv" remote="TN" revision="master" />
+  <project path="external/chromium_org/v8" name="external_chromium_org_v8" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/libjpeg_turbo" name="external_chromium_org_third_party_libjpeg_turbo" remote="TN" revision="master" />
+  <project path="frameworks/av" name="frameworks_av" remote="TN" revision="lp5.1" />
+  <project path="external/chromium_org/third_party/icu" name="external_chromium_org_third_party_icu" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/freetype" name="external_chromium_org_third_party_freetype" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/angle" name="external_chromium_org_third_party_angle" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/ots" name="external_chromium_org_third_party_ots" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/libsrtp" name="external_chromium_org_third_party_libsrtp" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/libvpx" name="external_chromium_org_third_party_libvpx" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/openmax_dl" name="external_chromium_org_third_party_openmax_dl" remote="TN" revision="master" />
+  <project path="external/chromium_org/third_party/webrtc" name="external_chromium_org_third_party_webrtc" remote="TN" revision="master" />
+  <project path="external/sqlite" name="external_sqlite" remote="TN" revision="master" />
 </manifest>
