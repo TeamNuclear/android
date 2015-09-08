@@ -520,7 +520,7 @@
   <project path="prebuilts/libs/libedit" name="platform/prebuilts/libs/libedit" groups="pdk-cw-fs" />
   <project path="prebuilts/maven_repo/android" name="platform/prebuilts/maven_repo/android" groups="pdk-cw-fs" />
   <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="pdk,tradefed" />
-  <!--<project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />-->
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" groups="pdk" />
   <project path="prebuilts/python/darwin-x86/2.7.5" name="platform/prebuilts/python/darwin-x86/2.7.5" groups="darwin,pdk,pdk-cw-fs" />
   <project path="prebuilts/python/linux-x86/2.7.5" name="platform/prebuilts/python/linux-x86/2.7.5" groups="linux,pdk,pdk-cw-fs" />
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" clone-depth="1" />
@@ -605,7 +605,7 @@
   <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="TN" revision="clang_qcom_3.6" />
   <project path="vendor/clanglibs" name="clanglibs" remote="TN" revision="clang_qcom_3.6" />
   <project path="external/compiler-rt" name="Nuclear_compiler-rt" groups="pdk" remote="TN" revision="master" />
-  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="TN" revision="clang_qcom_3.6" />
+<!--  <project path="prebuilts/ndk" name="android_prebuilts_ndk" groups="pdk" remote="TN" revision="clang_qcom_3.6" />-->
   <project path="frameworks/rs" name="Nuclear_frameworks_rs" groups="pdk" remote="TN" revision="master" />
   
   <!-- Tools -->
