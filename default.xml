@@ -626,4 +626,6 @@
   <project path="external/chromium_org/third_party/openmax_dl" name="external_chromium_org_third_party_openmax_dl" remote="TN" revision="master" />
   <project path="external/chromium_org/third_party/webrtc" name="external_chromium_org_third_party_webrtc" remote="TN" revision="master" />
   <project path="external/sqlite" name="external_sqlite" remote="TN" revision="master" />
+  
+  <project name="TeamNuclear/NuclearOTA" path="packages/apps/NuclearOTA" remote="github" revision="master" />
 </manifest>
