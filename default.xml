@@ -612,4 +612,6 @@
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15" remote="github" revision="master" />
   <project name="TeamNuclear/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15" remote="github" revision="master" />
  
+ <project name="TeamNuclear/NuclearOTA" path="packages/apps/NuclearOTA" remote="github" revision="master" />
+ 
 </manifest>
