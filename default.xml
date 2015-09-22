@@ -9,6 +9,9 @@
   <remote  name="aosparadox"
            fetch="ssh://git@github.com/aosparadox/"
            sync-c="true" />
+  <remote  name="TN"
+           fetch="ssh://git@github.com/TeamNuclear/"
+           sync-c="true" />
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
@@ -489,7 +492,7 @@
   <project groups="device" name="android_kernel_oneplus_msm8974" path="kernel/" remote="par" revision="lollipop_bacon"/>
   <project groups="device" name="proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="par" revision="lollipop_bacon"/>
 
-  <project path="frameworks/base" name="android_frameworks_base" remote="par" revision="lollipop_bacon" groups="pdk-cw-fs" />
+  <project path="frameworks/base" name="android_aosp_frameworks_base" remote="TN" revision="lp5.1" groups="pdk-cw-fs" />
 
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="lollipop_bacon"/>
   <project groups="qcom,default" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="par" revision="lollipop_bacon"/>
@@ -502,14 +505,14 @@
 
 <!-- QCOM MSM8974 -->
 
-  <project path="build" name="android_build" remote="par" revision="lollipop_msm8974" groups="pdk,tradefed" >
+  <project path="build" name="android_aosp_build" remote="TN" revision="lp5.1" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="par" revision="lollipop_msm8974"/>
   <project path="system/core" name="android_system_core" groups="pdk" remote="par" revision="lollipop_msm8974" />
 
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="par" revision="lollipop_msm8974" />
+  <project path="packages/apps/Settings" name="android_aosp_packages_apps_Settings" remote="TN" revision="lp5.1" />
   <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="par" revision="lollipop_msm8974" />
   <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="par" revision="lollipop_msm8974" />
   <project name="android_packages_apps_Mms" path="packages/apps/Mms" remote="par" revision="lollipop_msm8974" />
@@ -542,7 +545,7 @@
 
 <!-- AOSParadox Vendor -->
 
-  <project path="vendor/aosparadox" name="android_vendor_aosparadox" remote="par" revision="lollipop"/>
+  <project path="vendor/aospNuclear" name="android_vendor_aospNuclear" remote="TN" revision="lp5.1"/>
 
 
 <!-- END AOSParadox Stuff -->
