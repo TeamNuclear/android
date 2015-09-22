@@ -611,7 +611,11 @@
   <!-- Tools -->
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15" remote="github" revision="master" />
   <project name="TeamNuclear/arm-eabi-5.2" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15" remote="github" revision="master" />
- 
- <project name="TeamNuclear/NuclearOTA" path="packages/apps/NuclearOTA" remote="github" revision="master" />
- 
+  
+  <!-- NuclearOta -->
+  <project name="TeamNuclear/NuclearOTA" path="packages/apps/NuclearOTA" remote="github" revision="master" />
+  
+  <!-- Weather Packages -->
+  <project path="external/google" name="android_external_google" remote="cm" revision="cm-12.0" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="cm" revision="cm-12.1" />
 </manifest>
