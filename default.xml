@@ -10,7 +10,7 @@
            fetch="ssh://git@github.com/aosparadox/"
            sync-c="true" />
   <remote  name="TN"
-           fetch="ssh://git@github.com/TeamNuclear/"
+           fetch="git://github.com/TeamNuclear/"
            sync-c="true" />
 
   <remote  name="aosp"
