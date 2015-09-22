@@ -505,7 +505,7 @@
 
 <!-- QCOM MSM8974 -->
 
-  <project path="build" name="android_aosp_build" remote="TN" revision="opts" groups="pdk,tradefed" >
+  <project path="build" name="android_aosp_build" remote="TN" revision="optis" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
