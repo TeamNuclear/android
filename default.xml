@@ -491,8 +491,8 @@
 
   <project path="frameworks/base" name="android_aosp_frameworks_base" remote="TN" revision="lp5.1" groups="pdk-cw-fs" />
   <project name="aosp_packages_apps_InCallUI" path="packages/apps/InCallUI" remote="TN" revision="lp5.1"/>
-  <project name="aosp_packages_apps_Contacts" path="packages/apps/Contacts" remote="TN" revision="lp5.1/>
-  <project name="aosp_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="TN" revision="lp5.1/>
+  <project name="aosp_packages_apps_Contacts" path="packages/apps/Contacts" remote="TN" revision="lp5.1"/>
+  <project name="aosp_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="TN" revision="lp5.1"/>
   <project name="aosp_packages_apps_Dialer" path="packages/apps/Dialer" remote="TN" revision="lp5.1" />
   
   <project groups="qcom,default" name="android_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="par" revision="lollipop_bacon"/>
