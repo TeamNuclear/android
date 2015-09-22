@@ -439,8 +439,8 @@
   <project groups="pdk" name="platform/prebuilts/eclipse-build-deps-sources" path="prebuilts/eclipse-build-deps-sources"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8"/>
   <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/>
-  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8"/>
+ <!-- <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8"/> -->
+ <!-- <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8"/> -->
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6"/>
   <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8"/>
   <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8"/>
@@ -524,15 +524,13 @@
   <project groups="qcom,default" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="par" revision="lollipop_msm8974"/>
 
   <project name="android_vendor_qcom_opensource_bluetooth" path="vendor/qcom/opensource/bluetooth" remote="par" revision="lollipop_msm8974"/>
-
+  
   <project path="manifest" name="local_aosparadox" remote="par" revision="lollipop_msm8974"/>
 
 <!-- Busybox -->
-
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-12.1" />
 
 <!-- Common -->
-
   <project name="android_packages_apps_Browser" path="packages/apps/Browser" remote="par" revision="lollipop_common" />
   <project name="android_packages_apps_Camera" path="packages/apps/Camera" remote="par" revision="lollipop_common" />
   <project name="android_packages_apps_Gallery" path="packages/apps/Gallery" remote="par" revision="lollipop_common" />
@@ -543,10 +541,10 @@
   <project name="android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" remote="par" revision="lollipop_common" />
   <project name="android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" remote="par" revision="lollipop_common" />
 
-<!-- AOSParadox Vendor -->
-
+<!-- AONP Vendor -->
   <project path="vendor/aospNuclear" name="android_vendor_aospNuclear" remote="TN" revision="lp5.1"/>
 
-
-<!-- END AOSParadox Stuff -->
+<!-- AONP Tools -->
+  <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="master" />
+  <project name="SlimSaber/uber_arm-eabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="master" />
 </manifest>
