@@ -10,7 +10,7 @@
            fetch="ssh://git@github.com/aosparadox/"
            sync-c="true" />
   <remote  name="TN"
-           fetch="ssh://git@github.com/TeamNuclear/"
+           fetch="https://github.com/TeamNuclear/"
            sync-c="true" />
 
   <remote  name="aosp"
@@ -121,7 +121,7 @@
   <project name="platform/external/chromium_org/v8" path="external/chromium_org/v8"/>
   <project groups="pdk" name="platform/external/clang" path="external/clang"/>
   <project name="platform/external/cmockery" path="external/cmockery"/>
-  <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/>
+  <!-- <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt"/> -->
   <project name="platform/external/connectivity" path="external/connectivity"/>
   <project groups="pdk-cw-fs" name="platform/external/conscrypt" path="external/conscrypt"/>
   <project name="platform/external/curl" path="external/curl"/>
@@ -327,7 +327,7 @@
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/opt/widget" path="frameworks/opt/widget"/>
-  <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs"/>
+  <!-- <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs"/> -->
   <project groups="pdk-cw-fs" name="platform/frameworks/support" path="frameworks/support"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/volley" path="frameworks/volley"/>
   <project groups="pdk-cw-fs" name="platform/frameworks/webview" path="frameworks/webview"/>
@@ -547,4 +547,11 @@
 <!-- AONP Tools -->
   <project name="SlimSaber/uber_arm-androideabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" remote="github" revision="master" />
   <project name="SlimSaber/uber_arm-eabi-4.9-cortex-a15" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" remote="github" revision="master" />
+<!-- Clang Qcom Dependencies -->
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.5" name="llvm-Snapdragon_LLVM_for_Android_3.5/" remote="TN" revision="clang_qcom_3.5" />
+  <project path="prebuilts/clang/linux-x86/host/llvm-Snapdragon_LLVM_for_Android_3.6" name="llvm-Snapdragon_LLVM_for_Android_3.6/" remote="TN" revision="clang_qcom_3.6" />
+  <project path="vendor/clanglibs" name="clanglibs" remote="TN" revision="clang_qcom_3.6" />
+  <project path="external/compiler-rt" name="Nuclear_compiler-rt" groups="pdk" remote="TN" revision="master" />
+  <project path="frameworks/rs" name="Nuclear_frameworks_rs" groups="pdk" remote="TN" revision="master" />
+
 </manifest>
