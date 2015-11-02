@@ -7,24 +7,14 @@
            fetch="git://github.com/"
            review="https://review.slimroms.org/"/>
 
-  <default revision="refs/tags/android-6.0.0_r1"
-           remote="aosp"
-           sync-j="4" />
-           
   <remote  name="TN"
            fetch="https://github.com/TeamNuclear/" />
-           
-  <project path="build" name="TeamNuclear/android_build" remote="github" revision="lp5.1" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <project path="android" name="TeamNuclear/android" remote="github" revision="slp5.1" >
-  <copyfile src="build.sh" dest="build-nr.sh" />
-  <copyfile src="generate_changelog.sh" dest="generate_changelog.sh" />
-  </project>
 
-  <project path="build" name="SlimRoms/android_build" remote="github" revision="mm6.0" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  <default revision="refs/tags/android-6.0.0_r1"
+           remote="aosp"
+           sync-j="8" />
+
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="SlimRoms/android_art" remote="github" revision="mm6.0"  />
   <project path="bionic" name="SlimRoms/android_bionic" remote="github" revision="mm6.0" />
@@ -274,7 +264,6 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/av" name="SlimRoms/frameworks_av" remote="github" revision="mm6.0" />
-<!--  <project path="frameworks/base" name="SlimRoms/frameworks_base" remote="github" revision="mm6.0" />-->
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -424,7 +413,6 @@
   <project path="packages/apps/PhoneCommon" name="SlimRoms/packages_apps_PhoneCommon" remote="github" revision="mm6.0" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
- <!-- <project path="packages/apps/Settings" name="SlimRoms/packages_apps_Settings" remote="github" revision="mm6.0" />-->
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" groups="pdk-fs" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs" />
@@ -478,8 +466,6 @@
   <project path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" groups="pdk,darwin,mips" />
   <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" groups="pdk,darwin,x86" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8"  groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" groups="pdk-fs" />
@@ -522,10 +508,6 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="mm6.0" />
-
-  <!-- New Additions for slim -->
-  <project path="vendor/slim" name="slim-opt/vendor_slim" remote="github" revision="6.0" />
 
   <!-- CAF repos -->
   <project path="vendor/qcom/opensource/display-frameworks" name="SlimRoms/vendor_qcom_opensource_display-frameworks" remote="github" revision="mm6.0" />
@@ -550,9 +532,39 @@
   <project path="external/ffmpeg" name="SlimRoms/android_external_ffmpeg" remote="github" revision="mm6.0" />
   <project path="external/stagefright-plugins" name="slim-opt/android_external_stagefright-plugins" remote="github" revision="mm6.0" />
 
+  <!-- sony boringssl -->
+  <project name="CyanogenMod/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="github" revision="cm-13.0" />
 
-  <!-- Team Nuclear -->
-  <project path="frameworks/base" name="TeamNuclear/frameworks_base" remote="github" revision="mm6.0" />
-  <project path="packages/apps/Settings" name="TeamNuclear/packages_apps_Settings" remote="github" revision="mm6.0" />
+  <!-- TeamNuclear Stuff-->
+
+  <!-- Build -->
+  <project path="build" name="android_build" remote="TN" revision="mm6.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <project path="android" name="android" remote="TN" revision="mm6.0" >
+  <copyfile src="build.sh" dest="build-nuc.sh" />
+  <copyfile src="generate_changelog.sh" dest="generate_changelog.sh" />
+  </project>
+
+  <!-- Code -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="TN" revision="mm6.0" />
+  <project path="frameworks/base" name="frameworks_base" remote="TN" revision="mm6.0" />
+
+  <!-- Vendor -->
+  <project path="vendor/slim" name="slim-opt/vendor_slim" remote="github" revision="6.0" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-13.0" />
+
+  <!-- Device -->
+  <project name="slim-opt/device_oppo_common" path="device/oppo/common" remote="github" revision="6.0" />
+  <project name="slim-opt/device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="6.0" />
+
+  <!-- Kernel -->
+  <project name="Validus-Kernel/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="cm-13.0" />
+
+  <!-- tools -->	
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="uber_arm-eabi-4.9-cortex-a15" remote="TN" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="uber_arm-androideabi-4.9-cortex-a15" remote="TN" groups="pdk,linux,arm" />
+
 </manifest>
-
