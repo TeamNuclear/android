@@ -54,7 +54,7 @@ echo Creating and Initializing NS Source at $rrpath in 1...
 sleep 1
 mkdir -p $rrpath
 cd $rrpath
-repo init -u https://github.com/TeamNuclear/android.git -b slp5.1
+repo init -u https://github.com/TeamNuclear/android.git -b mm6.0
 clear
 echo NS Source Code has been initialized!
 sleep 4
