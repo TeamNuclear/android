@@ -558,7 +558,7 @@
 
   <!-- Device -->
   <project name="slim-opt/device_oppo_common" path="device/oppo/common" remote="github" revision="6.0" />
-  <project name="slim-opt/device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="6.0" />
+  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="TN" revision="6.0" />
 
   <!-- Kernel -->
   <project name="Validus-Kernel/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="cm-13.0" />
