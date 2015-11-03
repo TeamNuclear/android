@@ -552,7 +552,7 @@
   <project path="frameworks/base" name="frameworks_base" remote="TN" revision="mm6.0" />
 
   <!-- Vendor -->
-  <project path="vendor/slim" name="slim-opt/vendor_slim" remote="github" revision="6.0" />
+  <project path="vendor/slim" name="vendor_slim" remote="TN" revision="mm6.0" />
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
   <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-13.0" />
 
