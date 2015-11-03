@@ -564,7 +564,7 @@
   <project name="Validus-Kernel/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="cm-13.0" />
 
   <!-- tools -->	
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="uber_arm-eabi-4.9-cortex-a15" remote="TN" groups="pdk,linux,arm" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="uber_arm-androideabi-4.9-cortex-a15" remote="TN" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="uber_arm-eabi-4.9-cortex-a15" remote="TN" revision="master" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="uber_arm-androideabi-4.9-cortex-a15" remote="TN" revision="master" groups="pdk,linux,arm" />
 
 </manifest>
