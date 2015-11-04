@@ -561,7 +561,7 @@
   <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="TN" revision="6.0" />
 
   <!-- Kernel -->
-  <project name="Validus-Kernel/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="cm-13.0" />
+  <project name="acuicultor/android_kernel_oneplus_msm8974" path="kernel/oneplus/radioactive" remote="github" revision="Radioactive-v1" />
 
   <!-- tools -->	
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="arm-eabi-5.2" remote="TN" revision="master" groups="pdk,linux,arm" />
